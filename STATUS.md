@@ -12,8 +12,8 @@
 | 已推导 | 从 FKL 正则化卷积导出 $\widecheck F^{+(6)}_{4,4}$ 的完整 $S$-余循环 | 在小高度配对正正、正零、混合符号频率，确定全部齐次 Fourier 模，再计算尖点形式的周期积分 |
 | 已推导 | 非对角 $(6;5,3)$ 与权重 18 的 $(9;7,6)$ 的完整补全和 $S$-余循环 | 前者复现 DKS 的 $-5/11056$ 周期比系数。后者直接得到与 DGW 猜想相同的 Petersson 归一化系数 |
 | 已核对 | FKL 定理 B 的参数区间覆盖 DGW 式 (4.13) | 用 $d=s-s_1-s_2$ 与 $r_i=2s_i-1$ 换元 |
-| 待证明 | 对一般整数指标建立统一转换公式 | 需证明一般小高度 Fourier 核与正则化边界项的恒等式。三个算例中的标量已确定 |
+| 已写成证明稿，待独立审阅 | 对一般整数指标建立统一转换公式 | 混合块以连续密度和局部 Green 恒等式处理，正正与正零块由同一双变量多项式反演。补全系数化为 DGW 猜想 1 的公式 |
 | 推测 | Levent–Riemann 方法可用于一般指标 | 尚无明确的候选引理及其适用条件 |
 | 撤回 | 从半整数指标 Bessel 推导直接移用到整数指标的论证 | 撤回范围和理由见专页 |
 
-[权重 12 对角证明](weight-12/s-cocycle-proof.md) · [权重 12 非对角证明](weight-12/off-diagonal-5-3.md) · [权重 18 证明](weight-18/README.md) · [一般猜想](general-conjecture/README.md) · [撤回记录](corrections/README.md)
+[一般证明](general-conjecture/proof.md) · [权重 12 对角证明](weight-12/s-cocycle-proof.md) · [权重 12 非对角证明](weight-12/off-diagonal-5-3.md) · [权重 18 证明](weight-18/README.md) · [撤回记录](corrections/README.md)

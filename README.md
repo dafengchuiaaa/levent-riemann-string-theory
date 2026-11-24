@@ -2,7 +2,7 @@
 
 本项目研究广义 Eisenstein 级数中的尖点形式项。首个算例选取 Ramanujan 尖点形式 $\Delta_{12}$，比较正则化除数卷积和模不变补全中出现的同一对 $L$ 值。
 
-已从 FKL 卷积推出三个算例的完整 $S$-余循环。[权重 12 对角证明与符号订正](weight-12/s-cocycle-proof.md) · [权重 12 非对角证明](weight-12/off-diagonal-5-3.md) · [权重 18 证明](weight-18/README.md)
+已写成从 FKL 卷积推出 DGW 整数指标谱齐次补全及完整 $S$-余循环的一般证明稿，待独立审阅。[一般证明](general-conjecture/proof.md) · [权重 12 对角证明与符号订正](weight-12/s-cocycle-proof.md) · [权重 12 非对角证明](weight-12/off-diagonal-5-3.md) · [权重 18 证明](weight-18/README.md)
 
 | 阅读目的 | 档案 |
 |---|---|
