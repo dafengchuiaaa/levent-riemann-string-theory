@@ -10,8 +10,10 @@
 | 已核验 | DKS 的周期比形式与 DGW 的 Petersson 内积形式给出同一个权重 12 特例系数 | DKS (2.42)、(3.11) 和 DGW 期刊版 (4.19)、(4.22) 逐步换算 |
 | 已核验 | DKS 的 $M_{01}$ 等于两倍指标次序为 $(1,0)$ 的原始二重模值 | 在 $i$ 展开正则化迭代积分，数值复核与式 (3.9) 一致 |
 | 已推导 | 从 FKL 正则化卷积导出 $\widecheck F^{+(6)}_{4,4}$ 的完整 $S$-余循环 | 在小高度配对正正、正零、混合符号频率，确定全部齐次 Fourier 模，再计算尖点形式的周期积分 |
-| 待证明 | 对一般整数指标建立统一转换公式 | 权重 12 的单一算例已有证明。其他参数需分别控制 Fourier 核与正则化边界项 |
+| 已推导 | 非对角 $(6;5,3)$ 与权重 18 的 $(9;7,6)$ 的完整补全和 $S$-余循环 | 前者复现 DKS 的 $-5/11056$ 周期比系数。后者直接得到与 DGW 猜想相同的 Petersson 归一化系数 |
+| 已核对 | FKL 定理 B 的参数区间覆盖 DGW 式 (4.13) | 用 $d=s-s_1-s_2$ 与 $r_i=2s_i-1$ 换元 |
+| 待证明 | 对一般整数指标建立统一转换公式 | 需证明一般小高度 Fourier 核与正则化边界项的恒等式。三个算例中的标量已确定 |
 | 推测 | Levent–Riemann 方法可用于一般指标 | 尚无明确的候选引理及其适用条件 |
 | 撤回 | 从半整数指标 Bessel 推导直接移用到整数指标的论证 | 撤回范围和理由见专页 |
 
-[完整证明](weight-12/s-cocycle-proof.md) · [DKS 多重模值](weight-12/dks-multiple-modular-value.md) · [一般猜想](general-conjecture/README.md) · [撤回记录](corrections/README.md)
+[权重 12 对角证明](weight-12/s-cocycle-proof.md) · [权重 12 非对角证明](weight-12/off-diagonal-5-3.md) · [权重 18 证明](weight-18/README.md) · [一般猜想](general-conjecture/README.md) · [撤回记录](corrections/README.md)
