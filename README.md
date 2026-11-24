@@ -4,7 +4,7 @@
 
 已写成从 FKL 卷积推出 DGW 整数指标谱齐次补全及完整 $S$-余循环的一般证明稿，待独立审阅。[一般证明](general-conjecture/proof.md) · [权重 12 对角证明与符号订正](weight-12/s-cocycle-proof.md) · [权重 12 非对角证明](weight-12/off-diagonal-5-3.md) · [权重 18 证明](weight-18/README.md)
 
-奇谱证明稿给出底谱移位除数和的联合留数，推导其与 DKS 深度一修正的抵消，并单独处理权重 4。[奇谱证明](general-conjecture/odd-proof.md)
+奇谱证明稿给出底谱移位除数和的联合留数，推导其与 DKS 深度一修正的抵消，并单独处理权重 4。权重 24 底谱已用直接 DKS 积分核对两个尖形式和一个 Eisenstein 系数。[奇谱证明](general-conjecture/odd-proof.md) · [权重 24 底谱算例](general-conjecture/weight-24-odd-bottom.md)
 
 | 阅读目的 | 档案 |
 |---|---|
