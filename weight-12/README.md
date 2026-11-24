@@ -81,3 +81,5 @@ $$
 ## 4. 从卷积到模变换 · 待证明
 
 DKS 已给出这个算例的模不变补全。若要从 FKL 独立导出该结果，需要把正则化卷积识别为 DKS 同一特解的 Fourier 数据，控制重组级数及正则化产生的附加项，并在 $S:\tau\mapsto-1/\tau$ 下得到式 (3.9) 的完整变换差。上述两次分数换算只确定系数，尚未建立这一步。[一般指标的覆盖问题](../general-conjecture/README.md)
+
+本算例的后续计算从 DKS 的双重 Eisenstein 积分入手，给出完整卷积、两侧核的比较及 540 对尖点项的作用。[DKS 多重模值续算](dks-multiple-modular-value.md)
