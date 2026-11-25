@@ -7,7 +7,7 @@ F-F_{\rm p}=-\frac8\pi\frac{\Lambda(\Delta_{12},5)\Lambda(\Delta_{12},9)}
 {\langle\Delta_{12},\Delta_{12}\rangle}\,H^-_{\Delta_{12}} .
 $$
 
-这是固定半整数参数组的函数恒等式。特解的选取只用源与径向方程，下面将其与 FKL 的卷积核比较。DGW §5.1 提出的奇 theta 提升整体消去仍缺少相应的线性组合。[DGW §5.1](https://arxiv.org/html/2501.03996v2#S5.SS1)
+这是固定半整数参数组的函数恒等式。特解的选取只用源与径向方程，下面将其与 FKL 的卷积核比较。其推广见[一般半整数公式](half-odd-general.md)，相应的格点线性组合见[奇 theta 提升](half-odd-theta.md)。[DGW §5.1](https://arxiv.org/html/2501.03996v2#S5.SS1)
 
 ## 正正频率的有限乘积特解
 

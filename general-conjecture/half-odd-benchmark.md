@@ -117,4 +117,4 @@ $$
 $[2^{11}\mathrm B(7,5)]^{-1}\operatorname{FP}\int_{-1}^{1}(1-x^2)^4(1-x)^2\,dx/x^3=33/2$，
 其中 $\operatorname{FP}\int_{-1}^1x^{-2}dx=-2$。其余块没有可调的同类误差。一般 $n$ 的混合比例为 $Dn^{-3}$，由缩放 $Y\mapsto nY$ 和 (1) 得出。零腿 $Y^t$ 的系数随之乘 $n^{j-t-6}\sigma_{1-2j}(n)$，恰好给 $Dn^{-3}$ 乘 FKL (9) 的两项。因此这个最简延伸已经被一个解析反例排除。
 
-[全模证明](half-odd-positive.md)直接解出正正块的有限 Bessel 乘积，独立核对其割线值，完成本参数组的函数恒等式。一般指标以及奇 theta 提升的整体消去仍开放。
+[全模证明](half-odd-positive.md)直接解出正正块的有限 Bessel 乘积，独立核对其割线值，完成本参数组的函数恒等式。[一般指标](half-odd-general.md)通过频率延拓处理；[奇 theta 提升](half-odd-theta.md)给出产生消去的格点积分。

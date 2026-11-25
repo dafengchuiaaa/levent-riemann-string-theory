@@ -6,7 +6,7 @@
 
 奇谱证明稿给出底谱移位除数和的联合留数，推导其与 DKS 深度一修正的抵消，并单独处理权重 4。权重 24 底谱已用直接 DKS 积分核对两个尖形式和一个 Eisenstein 系数。[奇谱证明](general-conjecture/odd-proof.md) · [权重 24 底谱算例](general-conjecture/weight-24-odd-bottom.md)
 
-半整数奇谱的 $(6;3/2,5/2)$ 基准已得到全 Fourier 补全。正正块由显式 Bessel 乘积特解确定。[全模命题](general-conjecture/half-odd-positive.md) · [首模推导](general-conjecture/half-odd-benchmark.md)
+半整数奇谱的 $(6;3/2,5/2)$ 基准已得到全 Fourier 补全。正正块由显式 Bessel 乘积特解确定。沿频率作两岸延拓后得到一般半整数公式。对四维格点核作行列式插入，其提升按 Manin 周期关系逐尖形式消去。[一般补全](general-conjecture/half-odd-general.md) · [奇提升及整体消去](general-conjecture/half-odd-theta.md) · [全模命题](general-conjecture/half-odd-positive.md) · [首模推导](general-conjecture/half-odd-benchmark.md)
 
 | 阅读目的 | 档案 |
 |---|---|
