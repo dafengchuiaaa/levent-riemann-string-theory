@@ -1,6 +1,6 @@
 # 整数指标谱的卷积、齐次补全与 S-余循环
 
-**结论。** 对 Dorigoni–Green–Wen（DGW）式 (4.13) 的整数指标谱，以 Dorigoni–Kleinschmidt–Schlotterer（DKS）的 $\widecheck F$ 为特解，FKL 正则化卷积产生的尖点项给出的补全系数，等于 DGW 猜想 1 的系数。下面证明混合、正正、正零三个 Fourier 块的统一恒等式。证明稿尚待独立审阅。
+**结论。** 对 Dorigoni–Green–Wen（DGW）式 (4.13) 的整数指标谱，以 Dorigoni–Kleinschmidt–Schlotterer（DKS）的 $\widecheck F$ 为特解，FKL 正则化卷积产生的尖点项给出的补全系数，等于 DGW 猜想 1 的系数。下面证明混合、正正、正零三个 Fourier 块的统一恒等式。2026-11-25 对基线 8e018d3 另作逐节推导，补入了延拓路径、边界相位、零模及带误差界的符号检验。整数 theta 提升的推论见[周期消去命题](integer-manin.md)。
 
 沿用 Neon 提出的 Green–Parseval 路线。三 Bessel 积分的 Gauss 方程在下文直接推出。混合尾先减去连续密度，再用局部 Green 恒等式处理连续部分。两个有限块通过反演同一个双变量多项式计算。
 
@@ -167,6 +167,10 @@ W_{n,\mathrm{mix}}=\frac{\Xi}{n^\ell}\sum_\pm
 \tag{5}
 $$
 
+具体地，置 $v=d+1=-\ell-\epsilon$、$R_i=r_i+\epsilon$，则 $v+R_1=A,\ v+R_2=B$ 固定。FKL (8) 的两支相位是 $i^k\cos(\pi R_2/2)$ 与 $\cos(\pi R_1/2)$，因 $s\equiv b+m\pmod2$ 两者相等。乘 $2\Gamma(v)\Gamma(k+\ell)n^v/(\pi\Gamma(k))$ 后，两相位都趋于 $\Xi/n^\ell$。两支的中心矩可以不同。相位取极限前，被减去的最后一项已与 Hurwitz 极点相乘，不能直接把核替成多项式求和。
+
+取 $\epsilon_0=-\ell-1-\eta$，$0<\eta<1$。此时 $d=\eta>0,\ R_2=B-1-\eta>0$，同时满足 FKL (10) 及连续 Green 积分的 $m_{\epsilon_0},b_{\epsilon_0}>1/2,\ w+\epsilon_0<s$。从这里延拓至零，二项展开第 $t$ 项的 Hurwitz 自变量为 $z=t-\ell-\epsilon$，恒有 $R_2+z=B+t\ge2,\ R_1+z=A+t\ge2$。逐类分出首项 $(h_0+x_0)^{-z}$，其余为 $L^{-z}\zeta(z,1+(h_0+x_0)/L)$。扣除 $z=1$ 的极点后，后一项的 Hurwitz 因子在参数紧集上一致有界。$\Re z\le0$ 时以 $L\le ab'$ 控制两重和。$\Re z>0$ 时首项由 $h_0+x_0\gg_n\max(a,b')$ 控制，后一项用 $L=ab'/\gcd(a,b')$ 且 $\gcd(a,b')\mid n$。首项按 $a\le b'$ 或 $a>b'$ 求和，所需 $\Re(R_i+z)>1$ 和 $\Re(R_1+R_2+z)>2$ 沿线段均成立。故各局部展开给出同一亚纯延拓，中途的孤立极点可绕开。在整数点只有 $t=\ell+1$ 触及 $z=1$。
+
 将 DKS 离散和 $G_{\rm mix}$ 分解为连续密度
 $\mathcal H(Y)=A_n\int_0^\infty(g_+(h,Y)+g_-(h,Y))dh$
 与差 $G_{\rm mix}-\mathcal H$。
@@ -190,7 +194,9 @@ $\mathcal E_\epsilon=2 A_nF_{w+\epsilon}(n,Y)/[(w+\epsilon)(w+\epsilon-1)-s(s-1)
 
 连续源的 Green 积分分为 $[0,\eta]$ 和 $[\eta,\infty)$。在收敛域，$[0,\eta]$ 的第一项直接用局部 Green 恒等式得 $\mathscr W(\psi,\mathcal E_\epsilon)(\eta)$。有限频带的内积分在 $\epsilon\to0$ 后无常数部：其奇异支的指数为 $-2p-\epsilon+2j$，其余支在零点可积，频率端点的系数也可积（使用小参数 Bessel 的两支表达，系数是非负整数幂或次幂 $2m_\epsilon-1+2j,2b_\epsilon-1+2j$）。外积分可在 $\epsilon=0$ 直接积分。式 (2) 的多项式次数上界给 $\mathcal H=O(Y^{-3}e^{-nY/2})$ 于无穷远，故外积分是 $-\mathscr W(\psi,\mathcal H)(\eta)$。变形外积分的局部解析性也可由 $hY$ 缩放得到：小 $h$ 区间在乘 $\psi Y^{-2}$ 并对 $h$ 积分后为 $O(Y^{-2-\min(\Re m_\epsilon,\Re b_\epsilon)})$，其余有指数衰减。
 
-所以连续 Green 值的常数部是 $-\mathscr W(\psi,\mathcal H-\mathcal E_0)$ 的归一化常数部。此时交叉项确实消失。$\mathcal H-\mathcal E_0$ 的源是负的有限频带，其到 $Y^{1-s}$ 为止只含与 $1-s$ 相反奇偶的幂。两函数有下界有限的 Laurent 展开。由 $\mathcal L$ 的系数递推，$Y^{1-s-2j}$（$j\ge1$）全部消失。故该 Green 值等于 $[Y^{1-s}](\mathcal H-\mathcal E_0)$。
+这里外积分的估计取 $Y\to\infty$。例如小频腿的指标为 $t=m_\epsilon$ 时，令 $u=hY$，则 $F_t(h,Y)=Y^{1-t}F_t(u,1)$。另一腿 $n+h\ge n$ 的指数与 $\psi$ 相乘后留下 $e^{-u/2}$ 乘至多多项式。再乘 $dh=du/Y$ 及 $Y^{-2}$，便得到 $O(Y^{-2-\Re t})$，$u=0$ 的积分因 $\Re t>1/2$ 收敛。
+
+所以连续 Green 值的常数部是 $-\mathscr W(\psi,\mathcal H-\mathcal E_0)$ 的归一化常数部。在整数点，(2) 的有限多项式只需逐项计算 $\int_0^\infty h^j e^{-hY}dh=j!Y^{-j-1}$，故 $\mathcal H$ 是 $e^{-nY/2}$ 乘有下界的有限 Laurent 多项式，没有对数；半整数阶 $K$ 的有限展开对 $\mathcal E_0$ 给出同一性质。$\mathcal H-\mathcal E_0$ 的源是负的有限频带，其到 $Y^{1-s}$ 为止只含与 $1-s$ 相反奇偶的幂。由 $\mathcal L$ 的系数递推，$Y^{1-s-2j}$（$j\ge1$）全部消失。故该 Green 值等于 $[Y^{1-s}](\mathcal H-\mathcal E_0)$。
 
 另一方面，在收敛域对连续频率使用 (3) 后再延拓，同一 Green 值由 $A_nC_\epsilon\int_{x_0}^\infty\mathbb E[x\pm n(1/2-U)]^{\ell+\epsilon}\,dx$ 的两支给出。展开至 $\ell+1$ 阶；低阶幂的积分在 $\epsilon=0$ 给 $-x_0^{j+1}/(j+1)$，最后一项给 $-n^{\ell+1}\mu_{\ell+1}/(\ell+1)$。Fubini 在上述实收敛域成立：小高度连续源为 $O(Y^{1-w-\epsilon})$，大高度的估计如上。积分余项在 $\epsilon$ 的邻域可求和，零点逐项消失。与 (6) 相加，$x_0$ 项抵消，留下 (5)。得到
 
@@ -198,6 +204,8 @@ $$
 [Y^{1-s}](G_{\rm mix}-[\alpha E_w]_n)=c\,n^\ell W_{n,\mathrm{mix}} .
 \tag{7}
 $$
+
+连续有限项还有直接校验。写 $X=1/2-U$、$a=\ell+\epsilon$。先在 $a=-1-\eta$ 对 $x$ 取原函数，端点分别为 $nU,n(1-U)$，其 $-\eta$ 次矩存在。每支连续积分因此延拓为 $-\mathbb E(x_0\pm nX)^{a+1}/(a+1)$。在 $a=\ell$ 作有限二项展开，前 $\ell+1$ 项正好消去 (6) 的密度端点，余下的一项仍为 $-n^{\ell+1}\mu_{\ell+1}/(\ell+1)$。这也避免在 $x=x_0$ 使用不一致的无穷二项展开。傅里叶卷积采用 $\widehat u(f)=\pi^{-1}\int e^{-ift}u(t)\,dt$，所以 $(\widehat u*\widehat v)(n)=2\widehat{uv}(n)$，上文的系数 2 随之固定。
 
 ## 5. 从混合矩反演正正块
 
@@ -249,7 +257,7 @@ c\,n^\ell\frac{\Gamma(k+\ell)}{\pi}\,
 i^k\,\frac{(2\pi)^{-r_2}\zeta(1+r_2)n^{-r_2}}{\Gamma(A)}\,\sigma_{-r_1}(n).
 $$
 
-交换两腿即另一项，$i^k$ 消失，因为 $s+m+b$ 偶。两项是 FKL 式 (35) 两个 $Z$ 的第二部分，乘 $c n^\ell\Gamma(k+\ell)/\pi$ 和各自的迹公式相位。
+有限部指在绝对高度 $v=T$ 截断后取 $T^0$ 系数。被减多项式各幂至少为 $B-1\ge1$，故其从 0 到 $T$ 的原函数没有常数项或对数。相对 $c$，核 $D_0$ 的相位为 $(-1)^{s+m}$。小权常数腿再乘 $(-1)^m$ 给 $(-1)^s=i^k$；大权常数腿乘 $(-1)^b$ 给 $(-1)^{s+m+b}=1$。这两项分别是 FKL 式 (35) 两个 $Z$ 的第二部分乘公因子和各自相位。
 
 还要加 DKS I 式 (4.6) 的深度一修正。删除内层小权腿后，剩余系数只取 (8) 中原来该腿的 $Y^0v^{r_2-1}$ 项，即 $D_0u^{A-1}v^{r_2-1}$。理由是该修正系数只依赖被删腿的权，$Y$ 的分母与保留的深度一项合计仍为 $Y^q$。单腿正频率的 $-2/r_1!$ 与修正 $-2\zeta(r_2)/r_2$ 相乘，除以双腿归一化 $4/(r_1!r_2!)$ 给 $\Gamma(r_2)\zeta(r_2)$。积 $u$ 后，深度一贡献为
 
@@ -260,9 +268,13 @@ $$
 
 用 $\zeta'(1-r_2)=(-1)^{m-1}\Gamma(r_2)\zeta(r_2)/(2(2\pi)^{r_2-1})$，这正是 $i^kZ_d^{r_1,r_2}$ 的第一部分乘 $c n^\ell\Gamma(k+\ell)/\pi$。交换两腿得到另一项。纯零频和纯反全纯积分常数不进入 $n>0$ 模。故整个正零和深度一块给 $c n^\ell D_n$。
 
+具体看 DKS (4.6) 的删腿操作，对内层权 $k_1$、指标 $j_1$ 乘的是 $-2\zeta(k_1-1)/[(k_1-1)Y^{k_1-j_1-2}]$。外腿的分母为 $Y^{k_2-j_2-2}$，两者合计 $Y^q$。被删腿的首项系数 $[v^{r_2-1}]$ 恰是 1，故所需外腿多项式是 $[v^{r_2-1}]\mathscr B_\ell=D_0u^{A-1}$。删大权腿时用第二种次序，所得 $[u^{r_1-1}]\mathscr B_\ell=D_0v^{B-1}$。在 FKL 边界上相应零点的极限是 $\Gamma(-\ell-\epsilon)\zeta(1-r_i-\epsilon)\to-\zeta'(1-r_i)/\ell!$。这里 $\ell$ 为奇数。这分别检验了常数模的切向原函数和深度一的奇 zeta 修正，两种贡献都要保留。
+
 ## 7. 一般补全及余循环
 
-三个块相加得到 $c n^\ell(W_n+D_n)$。$k\ge6$ 时，用校正后的迹公式化成 $c n^\ell T_n$，即 (1)。在模不变解 $F$ 中减 $\alpha E_w$；若 $\delta>0$，再减适当倍数的 $E_{\delta+1}$，消去余下在尖点高于线性的增长。由模不变性与 $E_{1+\eta}$ 的比较，每个固定 Fourier 模在小高度为 $O(Y^{-\eta})$，任取 $0<\eta<1$。$E_{\delta+1}$ 的非零模最小幂次是 $-\delta>1-s$，不改变 (1)。DKS I §4.3 使 $F,\widecheck F$ 的 Laurent 多项式相同，齐次差的零模为零。非零模只剩 $K_{s-1/2}$ 衰减支，由 $Y^{1-s}$ 系数确定。偶性给出负模。$k=4$ 时，由 DKS 的尖点空间论证有 $F=\widecheck F$，上述增长估计也给 $W_n+D_n=0$。
+三个块相加得到 $c n^\ell(W_n+D_n)$。$k\ge6$ 时，用校正后的迹公式化成 $c n^\ell T_n$，即 (1)。在模不变解 $F$ 中减 $\alpha E_w$，若 $\delta>0$，再减适当倍数的 $E_{\delta+1}$，消去余下在尖点高于线性的增长。所得 $G$ 由正的 $E_{1+\eta}$ 控制，其固定 Fourier 模满足 $|G_n|\le\int_0^1|G|\,dx\ll\int_0^1 E_{1+\eta}\,dx=O(Y^{-\eta})$，任取 $0<\eta<1$。$E_{\delta+1}$ 的非零模最小幂次是 $-\delta>1-s$，不改变目标系数。
+
+DKS I (4.11) 及 §4.3 固定了 $F,\widecheck F$ 的整个尖点 Laurent 多项式。两者之差的第零模在所有高度都满足 Euler 方程，只能是 $aY^s+b'Y^{1-s}$，其在无穷端的两个 Laurent 系数均为零。非零模只剩 $K_{s-1/2}$ 衰减支，由 $Y^{1-s}$ 系数确定。偶性给出负模。$s=2$ 时谱强制 $b=m$，尖点扣去 $\alpha E_w$ 后至多线性增长。DKS I §4.4 的二阶导数将齐次差的正频送入权 4 尖形式，$S_4=0$，故 $F=\widecheck F$，上述估计也给 $W_n+D_n=0$。
 
 在任一归一化 Hecke 尖点形式 $f$ 上，校正符号后的 FKL 迹项为
 

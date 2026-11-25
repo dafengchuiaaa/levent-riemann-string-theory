@@ -4,7 +4,7 @@
 
 **参数覆盖（已核对）**　取 $s_1\ge s_2$、$w=s_1+s_2$，令 $(r_1,r_2,d,k)=(2s_1-1,2s_2-1,s-w,2s)$。FKL 定理 B 的条件 $-r_2+1\le d\le-2$ 对应 $s_1-s_2+2\le s\le w-2$，覆盖 DGW 式 (4.13) 的整个整数指标谱。两个被排除的 $d$ 都在此区间之外。FKL 的超几何变形和迹公式给出了适用参数点上的卷积恒等式。[FKL 定理 B](https://arxiv.org/html/2512.21413v1#S1.SS2) · [DGW 式 (4.13)](https://arxiv.org/html/2501.03996v2#S4.SS2)
 
-**统一转换（证明稿已完成，待独立审阅）**　令 $W_n$ 为 FKL 式 (33) 的值乘 $\Gamma(k-d-1)/\pi$，$T_n$ 为其中由 Hecke 尖点形式贡献的项，符号采用[迹公式订正](../weight-12/s-cocycle-proof.md)。[一般证明](proof.md)给出扣去主增长的 Eisenstein 项后，DKS 特解第 $n>0$ 模的 $Y^{1-s}$ 项为 $c_{s;s_1,s_2}n^{-d-1}T_n$，并配对零模。标量为
+**统一转换（证明稿经本轮独立审计并修订）**　令 $W_n$ 为 FKL 式 (33) 的值乘 $\Gamma(k-d-1)/\pi$，$T_n$ 为其中由 Hecke 尖点形式贡献的项，符号采用[迹公式订正](../weight-12/s-cocycle-proof.md)。[一般证明](proof.md)给出扣去主增长的 Eisenstein 项后，DKS 特解第 $n>0$ 模的 $Y^{1-s}$ 项为 $c_{s;s_1,s_2}n^{-d-1}T_n$，并配对零模。标量为
 
 $$
 c_{s;s_1,s_2}
