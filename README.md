@@ -19,4 +19,4 @@
 
 奇谱源来自 DGW §5.1。档案包含整数奇谱的补全及权重 24 底谱算例，也包含半整数奇谱的全模系数和四维 theta 提升。临界带消去空间与带外第一档 $w=s+2$ 的端点周期已有证明稿，待独立复审。[整数奇谱](general-conjecture/odd-proof.md) · [权重 24 算例](general-conjecture/weight-24-odd-bottom.md) · [半整数全模](general-conjecture/half-odd-general.md) · [奇 theta 提升](general-conjecture/half-odd-theta.md) · [临界带分类](general-conjecture/half-odd-span.md) · [带外第一档](general-conjecture/half-odd-first-exterior.md) · [DGW §5.1](https://arxiv.org/html/2501.03996v2#S5.SS1)
 
-[研究状态](STATUS.md) · [一般整数指标索引](general-conjecture/README.md) · [权重 12 研究日志](research-log/2026-11-24-weight-12.md) · [文献与公式](references/README.md) · [撤回与订正](corrections/README.md)
+[研究状态](STATUS.md) · [研究交接规则](AGENTS.md) · [一般整数指标索引](general-conjecture/README.md) · [权重 12 研究日志](research-log/2026-11-24-weight-12.md) · [文献与公式](references/README.md) · [撤回与订正](corrections/README.md)
