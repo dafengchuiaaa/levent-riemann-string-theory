@@ -14,7 +14,7 @@
 | 已核对 | FKL 定理 B 的参数区间覆盖 DGW 式 (4.13) | 用 $d=s-s_1-s_2$ 与 $r_i=2s_i-1$ 换元 |
 | 证明稿经本轮独立审计并修订 | DGW (4.13) 全部整数偶谱的补全系数及完整余循环，即猜想 1 的整数指标部分 | [证明](general-conjecture/proof.md)补明固定权重延拓、混合尾有限部、两种零腿及权 4。FKL v1 迹项取订正符号。另有[审计记录](research-log/2026-11-25-even-audit.md) |
 | 已推导 | DGW 猜想 2 中整数二圈 MGF 的每个全纯尖形式系数为零 | 由整数偶谱公式逐项接到 DGW 的 Manin 周期关系。保留 $s=1$ 的常数例外。另从周期积分解析导出 (4.64) 的特殊和。[消去命题及特殊和](general-conjecture/integer-manin.md) |
-| 固定参数全模已推导，首模另有数值复算 | DGW §5.1 半整数奇源 $(6;3/2,5/2)$ 的 $H^-_{\Delta_{12}}$ 系数 | [首模基准](general-conjecture/half-odd-benchmark.md)固定特解后得到 $-8\Lambda(5)\Lambda(9)/(\pi\langle\Delta,\Delta\rangle)$。正正块改用独立求出的 Laurent–Bessel 乘积后，对任意正频率比与 FKL 割线值严格相等。[全模证明](general-conjecture/half-odd-positive.md)。一般半整数奇谱及奇 theta 提升的整体消去仍开放 |
+| 固定参数全模证明经网页 Neon 独立复审，已补充边界论证 | DGW §5.1 半整数奇源 $(6;3/2,5/2)$ 的 $H^-_{\Delta_{12}}$ 系数 | [首模基准](general-conjecture/half-odd-benchmark.md)固定特解后得到 $-8\Lambda(5)\Lambda(9)/(\pi\langle\Delta,\Delta\rangle)$。[全模证明及复审记录](general-conjecture/half-odd-positive.md)核对任意正频率比的割线恒等式及 $n=1,2,3,4$ 四模。一般半整数奇谱及奇 theta 提升的整体消去仍开放 |
 | 初稿已由网页 Gemini 独立复审，已处理意见 | 奇谱的齐次补全及完整 $S$ 余循环，含顶谱、底谱和权重 4 | [奇谱证明](general-conjecture/odd-proof.md)。对提交 a6e24c6 的复审未指出改变结论的漏洞。修订明确了 FKL 归一化、底谱零模的归属及权重 4 的相反号配对。[复审记录](research-log/2026-11-25-odd-spectrum.md) |
 | 精确因子已复核，数值结果经独立复算 | 权重 24 奇底谱 $F^{-(12)}_{2,13}$ 的两个尖形式系数、一个 Eisenstein 修正及完整余循环 | [权重 24 底谱算例](general-conjecture/weight-24-odd-bottom.md)。原计算用 DKS 积分三点反解，保留第四点检验。网页 Gemini 独立复算精确因子、尖形式数据及四点周期值。未给出严格截断误差界 |
 | 推测 | Levent–Riemann 方法可用于一般指标 | 尚无明确的候选引理及其适用条件 |
